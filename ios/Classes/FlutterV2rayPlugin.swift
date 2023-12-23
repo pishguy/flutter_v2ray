@@ -1,5 +1,6 @@
 import Flutter
 import UIKit
+import XRay
 
 public class FlutterV2rayPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -11,6 +12,7 @@ public class FlutterV2rayPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
     case "getPlatformVersion":
+        XRay
       result("iOS " + UIDevice.current.systemVersion)
     default:
       result(FlutterMethodNotImplemented)

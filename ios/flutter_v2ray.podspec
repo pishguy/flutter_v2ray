@@ -4,14 +4,14 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_v2ray'
-  s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.version          = '1.0.7'
+  s.summary          = 'A plugin that allow you to making v2ray connection'
   s.description      = <<-DESC
-A new Flutter plugin project.
+  A plugin that allow you to making v2ray connection
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/blueboy-tm/flutter_v2ray'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'ArshiaEihami' => 'arshiaihammi@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
@@ -20,4 +20,5 @@ A new Flutter plugin project.
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
+  s.vendored_frameworks = 'XRay.xcframework'
 end
